@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="./styless.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Go2Cod To Do App</h2>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter a task here">
+            <button onclick="addTask()" class="btn save-btn">Save</button>
+            <button onclick="getTasks()" class="btn get-btn">Get Tasks</button>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Todo item</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="taskTableBody">
+                <!-- Task items will go here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
